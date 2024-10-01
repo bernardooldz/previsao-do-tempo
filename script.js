@@ -1,5 +1,3 @@
-const key = "71fdf064f8586e34dac3a630dcf4e7e8"
-
 //função para exibir os dados relativos a cidade pesquisada; cada linha devolve um resultado em seu campo devido
 function exibirDados(dados){
     document.querySelector(".cidade_buscada").innerHTML = "Tempo em " + dados.name
