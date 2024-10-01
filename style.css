@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: #333;
+    padding: 50px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url(imagens/imgfundo.jpg);
+}
+
+.caixa-maior{
+    background: rgba(0, 0, 0, 0.7  );
+    border-radius: 20px;
+    padding: 20px;
+    width: 95%;
+    max-width: 450px;
+    box-shadow: 1em 1em #FB7D00;    
+    transition: .5s;
+}
+
+.caixa-maior *{
+    transition: color .5s;
+}
+
+input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #7c7c7c2b;
+    color: #fff;
+    width: calc(100% - 60px);
+}
+
+input:focus{
+    background-color: #7c7c7c2b;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: #7c7c7c2b;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+
+button:hover{
+    background-color: #f1a04e;
+}
+
+h2{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.caixa-media{
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.temp{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.caixa-menor{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #FB7D00;
+    border-radius: 10px;
+}
+
+header{
+    top: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5rem;
+    align-items: center;
+    transition: .5s;
+}
+
+header.active{
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+footer{
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.7rem;
+    transition: .5s;
+}
+
+.texto-previsao{
+    color: #fff;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.umidade{
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 7px;
+}
+
+.nome-umidade{
+    color: #fff;
+    margin-top: 20px;
+    border: 1px solid #FB7D00;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn{
+    width: 50px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    background: rgba(235, 133, 49, 0.6);    
+    box-shadow: 2px 2px #FB7D00;    
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 25px;
+    background-image: url(imagens/brightness-contrast_9572975.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    top: 52%;
+    left: 1px;
+    transform: translateY(-50%);
+}
+
+.btn.active::before{    
+    left: 23px;
+    background-image: url(imagens/brightness-contrast_9572975.png); /*<a href="https://br.freepik.com/icone/brilho-contraste_9572975#fromView=resource_detail&position=0">Ícone de nangicon</a>*/
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+
+.btn.active.btn{    
+    border: 1px solid #333;
+}
+
+.btn.active{
+    color: #333;
+}
+
+
+.caixa-maior.active{
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.caixa-maior.active *{
+    color: #333;
+}
+
+footer.active{
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 500px) {
+    
+    body{
+        gap: 0;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    header{
+        font-size: 1rem;
+        padding-inline: 2.5rem;
+    }
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Previsão do Tempo</title>
+</head>
+<body>
+    <header>
+        <div>Previsão do Tempo</div>        
+        <div class="btn"></div>
+    </header>
+
+    <div class="caixa-maior">
+        <input id="cidade" placeholder="Digite o nome da cidade">
+        <button onclick="clickCity()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <div class="caixa-media">
+            <h2 class="cidade_buscada">Cidade...</h2>
+            <p class="temp">0°C</p>
+
+            <div class="caixa-menor">
+                <img class="img-previsao" src="https://openweathermap.org/img/wn/04n.png" alt="icone-info-tempo">
+                <p class="texto-previsao">-</p>
+            </div>
+
+            <p class="nome-umidade">Umidade: <span class="umidade">0%</span></p>
+        </div>
+    </div>
+    <footer>
+        <div>
+            2024 | Desenvolvido por ldz.dev | Direitos Reservados
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
