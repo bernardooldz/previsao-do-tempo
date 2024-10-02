@@ -17,7 +17,7 @@ Este é um site simples de previsão do tempo que utiliza a API do OpenWeatherMa
 
 ## Como Acessar
 
-O site está hospedado no GitHub Pages. Para acessá-lo, basta clicar [neste link](https://bernardooldz.github.io/previsao-do-tempo/).
+O site está hospedado no GitHub Pages. Para acessá-lo, basta clicar [neste link](https://ldzprevisaodotempo.netlify.app/).
 
 ## Como Usar
 
